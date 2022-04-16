@@ -1,5 +1,4 @@
 # CMPE-279_Assignment
-Team
 
 
 Venkata Siva Prasad kakkera
