@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     char buffer[1024] = {0};
     char *hello = "Hello from server";
     const char *nobody = "nobody";
-    struct passwd *nobody_user;
+    struct passwd * nobody_user;
     int val;
 
     pid_t present_pid, parent_pid;
@@ -41,6 +41,8 @@ int main(int argc, char const *argv[])
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
     address.sin_port = htons(PORT);
+
+ // Forcefully attaching socket to the 8080
 
     if (bind(server_fd, (struct sockaddr *)&address,
              sizeof(address)) < 0)
@@ -67,7 +69,7 @@ int main(int argc, char const *argv[])
     printf("\nThis is beginning of privilege separation\n");
 
     present_pid = fork();
-
+// child proceaa
     if (present_pid == 0)
     {
         printf("\nWe have created a child process\n");
