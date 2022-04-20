@@ -23,5 +23,7 @@ make
 
 
  gcc -o server server.c && sudo ./server
+ 
  gcc -o client client.c && ./client
+ 
  Both run on port 8080
