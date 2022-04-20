@@ -1,7 +1,5 @@
 # CMPE-279_Assignment
 
-Team
-
 
 Venkata Siva Prasad kakkera
 
@@ -21,12 +19,9 @@ make
 
 # Assignment 2
 
-Type the following commands in Ass2 folder
+ Work with Team : Alaa AbuShqeir ( 015528305 ) and  Venkata Siva Prasad Kakkera ( 015935101 ) 
 
-make
 
-tmux
-
-sudo ./server
-
-./client
+ gcc -o server server.c && sudo ./server
+ gcc -o client client.c && ./client
+ Both run on port 8080
